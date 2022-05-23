@@ -1,0 +1,121 @@
+@charset "EUC-KR";
+
+	.wrapper{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+	}
+	#content{
+		display: grid;
+		place-items: center;
+		font-family: 'Gowun Dodum', sans-serif;
+		font-weight: bold;
+	}
+	table{
+		border: 3px solid navy;
+		border-collapse: collapse;
+	}
+	td{
+		border-bottom: 1px solid navy;
+		padding: 10px;
+	}
+	.btn_area{
+		padding-top: 30px;
+	}
+	
+	/* 버튼 스타일 */
+	.btn_normal {
+    position: relative;
+    border: none;
+    min-width: 100px;
+    min-height: 50px;
+    background: #ffb72b;
+    border-radius: 1000px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: medium;
+    transition: 0.3s;
+    font-family: 'Gowun Dodum', sans-serif;
+	}
+	
+	.btn_normal:hover {
+	    transform: scale(1.2);
+	}
+	
+	.btn_normal:hover::after {
+	    content: "";
+	    width: 30px;
+	    height: 30px;
+	    border-radius: 100%;
+	    border: 6px solid #ffb72b;
+	    position: absolute;
+	    z-index: -1;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    animation: ring 1.5s infinite;
+	  }
+	  
+	.title{
+		font-family: 'Pacifico', sans-serif;
+		font-size: 3em;
+		color: #ffb72b;
+		font-weight: bold;
+	}
+	/* 체크박스 스타일  */
+	 input[type="checkbox"] {
+        -webkit-appearance: none;
+        position: relative;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        outline: none !important;
+        border: 1px solid #eeeeee;
+        border-radius: 2px;
+        background: #fbfbfb;
+    }
+ 
+    input[type="checkbox"]::before {
+        content: "\2714";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        transform: scale(0) translate(-50%, -50%);
+        line-height: 1;
+    }
+ 
+    input[type="checkbox"]:hover {
+        border-color: rgba(170, 170, 170, 0.5);
+    }
+ 
+    input[type="checkbox"]:checked {
+        background-color: #ffb72b;
+        border-color: rgba(255, 255, 255, 0.3);
+        color: white;
+    }
+ 
+    input[type="checkbox"]:checked::before {
+        border-radius: 2px;
+        transform: scale(1) translate(-50%, -50%)
+    }
+    
+    /* 셀렉트박스 스타일 */
+    select {
+		width: 150px;
+		padding: .8em .5em;
+		border: none;
+		font-family: 'Gowun Dodum', sans-serif;
+		font-weight: bold;
+		font-size: medium;
+		background: (D:\서승혜\포트폴리오\4팀\img\arrow.jpg') no-repeat 95% 50%;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+		
+	select::-ms-expand {
+	    display: none;
+	}

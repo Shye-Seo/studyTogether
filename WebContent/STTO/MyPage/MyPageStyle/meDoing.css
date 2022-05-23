@@ -1,0 +1,27 @@
+.mediv{
+		border: 2px dotted navy;
+		border-radius: 15px;
+		width : 230px;
+		height : 180px;
+		margin: 10px;
+		font-weight: bold;
+		font-size: 20px;
+		text-align: center;
+		  box-shadow: 10px 10px rgba(100,100,80,10) ;
+	}
+.mediv:hover{
+	background: #ffb72b;
+	transform: scale(1.1);
+
+	}
+* {
+  margin: auto;
+  padding: 5px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+
+td {
+	border-bottom: 0.5px dotted navy; 
+	border-right: 0.5px dotted navy;
+}

@@ -1,0 +1,129 @@
+	.btn-search {
+    position: relative;
+    border: none;
+    min-width: 100px;
+    min-height: 50px;
+    background: #ffb72b;
+    border-radius: 1000px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: medium;
+    transition: 0.3s;
+    font-family: 'Gowun Dodum', sans-serif;
+	}
+	.btn-search:hover {
+	    transform: scale(1.2);
+	}
+	.btn-search:hover::after {
+	    content: "";
+	    width: 30px;
+	    height: 30px;
+	    border-radius: 100%;
+	    border: 6px solid #ffb72b;
+	    position: absolute;
+	    z-index: -1;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    animation: ring 1.5s infinite;
+	}
+	
+	.btn_normal {
+		position: relative;
+	    padding: 10px 10px;
+	    border-radius: 15px;
+	    border: none;
+   		color: #06113c;
+   		background-color: aliceblue;
+	    display: inline-block;
+	    font-family: 'Gowun Dodum', sans-serif;
+	    text-decoration: none;
+	    font-weight: 600;
+	    transition: 0.25s;
+	}
+	.btn_normal:active {
+	    transform: scale(1.5);
+	}
+	.btn_normal:hover {
+	    letter-spacing: 2px;
+	    transform: scale(1.2);
+	    cursor: pointer;
+	}
+	
+	/* 로고 스타일  */
+	.main_logo{
+		font-family: 'Pacifico', cursive;
+		font-size: 5em;
+		color: #ffb72b;
+		font-weight: bold;
+	}
+	
+    *{margin: 10px; padding: 5px;}
+    
+    .wrapper{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 80vh;
+	}
+	.table_search{
+		border: 3px solid navy;
+		border-radius: 15px;
+		width: 1000px;
+		height: 50px;
+		align-content: center;
+		font-family: 'Gowun Dodum', sans-serif;
+	}
+	.table_list{
+		
+		width: 800px;
+		align-content: center;
+		font-family: 'Gowun Dodum', sans-serif;
+		font-weight: bold;
+		padding: 20px;
+	}
+	
+	select {
+		width: 150px;
+		padding: .8em .5em;
+		border: none;
+		font-family: 'Gowun Dodum', sans-serif;
+		font-weight: bold;
+		font-size: medium;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+	
+	.consi{
+	 	float :left;
+	 	width: 195px;
+	 	height : 180px;
+	 	margin-left : 50px;
+		border :  2px solid navy;
+		border-radius: 10px;
+		color : black;
+	}
+	.consi:hover {
+	    letter-spacing: 2px;
+	    transform: scale(1.159);
+	    cursor: pointer;
+	}
+	.consi_lan{
+		float: left; padding-left: 10px; padding-top: 10px; margin : 0 0 0 10;
+	}
+	.consi_inch{
+		float: right; padding-right: 10px; padding-top: 10px; margin : 0 10 0 0 ;
+	}
+	.consi_area{
+		border-bottom:1px dotted navy;border-top:1px dotted navy; line-height: 28px;
+		margin-top : 30px;
+	}
+	select::-ms-expand {
+	    display: none;
+	}
+	img{
+	margin : 0;
+	padding : 0;
+	}

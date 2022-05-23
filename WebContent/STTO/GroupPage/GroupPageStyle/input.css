@@ -1,0 +1,78 @@
+@charset "EUC-KR";
+
+.wrapper{
+	display: block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.wrap {
+    width: 100%;
+    text-align: center;
+    visibility: visible;
+}
+.title{
+	color: navy;
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	margin: auto;
+}
+.in {
+     display: block;
+     margin: auto;
+}
+
+#main_header{
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 2em;
+    color: navy;
+    font-weight: bold;
+    display: block;
+}
+
+.btn_normal {
+	position: relative;
+	border: none;
+	min-width: 100px;
+	min-height: 50px;
+	background: #ffb72b;
+	border-radius: 1000px;
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: medium;
+	transition: 0.3s;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+.txt {
+		border: 3px solid navy;
+		border-radius: 30px;
+		width: 1000px;
+		display: grid;
+		place-items: center;
+		font-family: 'Gowun Dodum', sans-serif;
+		font-weight: bold;
+		margin-bottom: 20px;
+		padding: 20px;
+}
+.btn_normal:hover {
+	transform: scale(1.2);
+}
+
+.btn_normal:hover::after {
+	content: "";
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	border: 6px solid #ffb72b;
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: ring 1.5s infinite;
+}
+
+#content{padding: 10px; margin: 10px;}

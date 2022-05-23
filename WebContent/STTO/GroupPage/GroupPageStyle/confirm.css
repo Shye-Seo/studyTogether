@@ -1,0 +1,122 @@
+* {
+	margin: 5px;
+	padding: 5px;
+	margin : auto;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	width: 1200px
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+		border: 3px solid navy;
+		border-radius: 30px;
+		width: 1000px;
+		display: grid;
+		place-items: center;
+		font-family: 'Gowun Dodum', sans-serif;
+		font-weight: bold;
+		margin-bottom: 20px;
+}
+
+.title {
+	color: navy;
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.date {
+	align-items: center;
+	margin: 5px;
+	padding: 0;
+	float: left;
+	width: 1000px;
+	height: 40px;
+	text-align: center;
+	border: 1px solid black;
+	
+}
+
+.confirm_wrap {
+	width: 480px;
+	text-align: center;
+	border: 3px solid navy;
+	font-weight: bold;
+	overflow: hidden;
+	margin-bottom : 5px;
+}
+
+.confirm_wrap_name {
+	width: 480px;
+	text-align: center;
+	border: 3px solid navy;
+	font-weight: bold;
+	overflow: hidden;
+	float : left;
+	margin-left : 65px;
+	margin-top : 8px;
+}
+
+.box {
+	margin: 5px;
+	padding: 5px;
+	float: left;
+	width: 450px;
+	height: 80px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.box1 {
+	margin: 5px;
+	padding: 5px;
+	float: left;
+	width: 540px;
+	height: 80px;
+	margin-left: 10px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.btn_normal {
+	position: relative;
+	border: none;
+	min-width: 100px;
+	min-height: 50px;
+	background: #ffb72b;
+	border-radius: 1000px;
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: medium;
+	transition: 0.3s;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+
+.btn_normal:hover {
+	transform: scale(1.2);
+}
+
+.btn_normal:hover::after {
+	content: "";
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	border: 6px solid #ffb72b;
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: ring 1.5s infinite;
+}

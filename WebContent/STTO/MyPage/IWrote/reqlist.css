@@ -1,0 +1,54 @@
+@charset "EUC-KR";
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+		@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+      *{
+		font-family: 'Gowun Dodum', sans-serif;
+	  }
+		.wrapper {
+      }
+      .box {
+        text-align: center;
+        width: 1000px;
+        height: 80px;
+        border: 3px solid navy;
+        margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+      }
+      .title {
+        font-size: 3em;
+        color: navy;
+        font-weight: bold;
+      }
+      .btn_normal {
+        position: relative;
+        border: none;
+        min-width: 70px;
+        min-height: 40px;
+        background: #ffb72b;
+        border-radius: 1000px;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: medium;
+        transition: 0.3s;
+        font-family: 'Gowun Dodum', sans-serif;
+        }
+        
+        .btn_normal:hover {
+            transform: scale(1.2);
+        }
+        
+        .btn_normal:hover::after {
+            content: "";
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            border: 6px solid #ffb72b;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring 1.5s infinite;
+          }
